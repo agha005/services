@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background-video {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* page content */
+
+body {
+  font-family: Trebuchet MS;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  margin-top: 30vh; 
+  color: #000;
+}
+
+h2 { font-size: 3rem; }
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("pexels-emre-vonal-7700793\ \(1080p\).mp4") no-repeat;
+      background-size: cover;
+    }
+}
+
+main {
+  background-color: lightblue;
+  font-size: 2rem;
+  margin-top: 0vh;
+  padding: 10px;
+  position: relative;
+}
+.heavy{
+    color: #00fff0;
+    font-size: 80px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.logo{
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #3feccd;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+.navigation a:hover{
+    background-color: #359381;
+    color: #fff;
+    transform: scale(1);
+    transition: 1s;
+}
+.navigation{
+    padding: 25px;
+}
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="pexels-emre-vonal-7700793 (1080p).mp4" type="video/mp4">
+          </video>
+          
+          <h1 class="heavy">BIMMER AUTOMOBILES.</h1>
+          <h2>How majestic.</h2>
+          
+          <main>
+           <h1>Our Services</h1>
+           <p>We deals in all kinds of super and luxioury cars all over the country wide.For more details go to the contact tab and email us.
+           </p>
+          </main>
+         
+    </header>
+</body>
+</html>
